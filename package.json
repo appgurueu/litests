@@ -1,6 +1,6 @@
 {
   "name": "litests",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "esversion": 6,
   "description": "A lightweight unit testing framework",
   "main": "./index.js",
@@ -33,8 +33,6 @@
     "node": ">= 6.0.0",
     "npm": ">= 3.0.0"
   },
-  "dependencies": {
-    "htmltags": "0.0.1"
-  },
+  "dependencies": {},
   "homepage": "https://github.com/appgurueu/litests"
 }
