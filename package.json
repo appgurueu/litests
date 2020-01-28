@@ -1,17 +1,24 @@
 {
-  "name": "litest",
-  "version": "1.0.0",
+  "name": "litests",
+  "version": "1.0.2",
   "esversion": 6,
   "description": "A lightweight unit testing framework",
   "main": "./index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/appgurueu/litest.git"
+    "url": "git+https://github.com/appgurueu/litests.git"
   },
   "keywords": [
-    "lit", "lite", "light", "lightweight",
-    "unit", "test", "library", "framework",
-    "simple", "small"
+    "lit",
+    "lite",
+    "light",
+    "lightweight",
+    "unit",
+    "test",
+    "library",
+    "framework",
+    "simple",
+    "small"
   ],
   "author": {
     "name": "Lars Mueller",
@@ -26,6 +33,8 @@
     "node": ">= 6.0.0",
     "npm": ">= 3.0.0"
   },
-  "dependencies": {},
-  "homepage": "https://github.com/appgurueu/litest"
+  "dependencies": {
+    "htmltags": "0.0.1"
+  },
+  "homepage": "https://github.com/appgurueu/litests"
 }

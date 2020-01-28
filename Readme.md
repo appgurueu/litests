@@ -1,4 +1,4 @@
-# Litest - Lite lit tests (`litest`)
+# Litest - Lite lit tests (`litests`)
 
 An extremely small unit testing library.
 
@@ -19,11 +19,27 @@ Litest is licensed under the MIT license and has been written by Lars Mueller al
 The API **can read Lua 5.4** compatible Luon, but **writes Lua 5.1** compatible Luon.
 Methods may raise errors for invalid objects (for instance functions) or invalid Luon.
 
+### Installation
+
+Install the NPM package [`litests`](https://npmjs.com/package/litests):
+```bash
+npm install litests
+```
+
 ### Import
 
 ```javascript
-const litest=require("litest");
+const litest=require("litests");
 ```
+
+### Versions
+
+* `1.0.0`
+  * Initial version
+* `1.0.1`
+  * Documentation improvements & fixes
+* `1.0.2`
+  * Fixed links in `package.json`
 
 #### Expectations
 
@@ -63,7 +79,7 @@ Testers carry out test series and display total results.
 [Luon](https://github.com/appgurueu/luon) uses Litest; below is an excerpt:
 
 ```javascript
-const litest = require("litest.js");
+const litest = require("litests");
 const luon = require("./index.js");
 
 new litest.BulkTester(luon).testEqualsAll([
