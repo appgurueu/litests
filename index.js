@@ -10,7 +10,7 @@ class ValueExpectation {
         }
         if (typeof (output) === "object" && typeof (this.value) === "object") {
             for (let key in this.value) {
-                if (!(key in output[key])) {
+                if (!(key in output)) {
                     return false;
                 }
             }
