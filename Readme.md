@@ -40,6 +40,10 @@ const litest=require("litests");
   * Documentation improvements & fixes
 * `1.0.2`
   * Fixed links in `package.json`
+* `1.0.3`
+  * Removed unneeded dependency in `package.json`
+* `1.0.4`
+  * Fixed bug concering object equality in `ValueExpectation`
 
 #### Expectations
 

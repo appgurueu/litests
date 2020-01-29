@@ -9,6 +9,11 @@ class ValueExpectation {
             return true;
         }
         if (typeof (output) === "object" && typeof (this.value) === "object") {
+            for (let key in this.value) {
+                if (!(key in output[key])) {
+                    return false;
+                }
+            }
             for (let key in output) {
                 if (!new ValueExpectation(output[key]).isValid(this.value[key])) {
                     return false;
