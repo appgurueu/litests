@@ -43,9 +43,11 @@ const litest=require("litests");
 * `1.0.3`
   * Removed unneeded dependency in `package.json`
 * `1.0.4`
-  * Fixed bug concering object equality in `ValueExpectation`
+  * Fixed bug concerning object equality in `ValueExpectation`
 * `1.0.5`
   * Fixed the fix
+* `1.0.6`
+  * Fixed objects referencing themselves
 
 #### Expectations
 

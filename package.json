@@ -1,6 +1,6 @@
 {
   "name": "litests",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "esversion": 6,
   "description": "A lightweight unit testing framework",
   "main": "./index.js",
@@ -27,7 +27,7 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/appgurueu/litest/issues"
+    "url": "https://github.com/appgurueu/litests/issues"
   },
   "engines": {
     "node": ">= 6.0.0",

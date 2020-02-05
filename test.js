@@ -1,0 +1,1 @@
+const litests = require("./index.js");

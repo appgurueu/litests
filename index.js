@@ -1,7 +1,13 @@
 "use strict";
 class ValueExpectation {
-    constructor(value) {
+    constructor(value, known) {
         this.value = value;
+        this.known = new Set();
+        if (known) {
+            for (let entry of known) {
+                this.known.add(entry);
+            }
+        }
     }
 
     isValid(output) {
@@ -9,13 +15,18 @@ class ValueExpectation {
             return true;
         }
         if (typeof (output) === "object" && typeof (this.value) === "object") {
+            this.known.add(this.value);
             for (let key in this.value) {
                 if (!(key in output)) {
                     return false;
                 }
             }
             for (let key in output) {
-                if (!new ValueExpectation(output[key]).isValid(this.value[key])) {
+                let val = this.value[key];
+                if (this.known.has(val)) {
+                    continue;
+                }
+                if (!new ValueExpectation(output[key], this.known).isValid(val)) {
                     return false;
                 }
             }
